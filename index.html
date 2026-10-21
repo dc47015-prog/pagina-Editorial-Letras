@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial & Letras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <a class="logo" href="#inicio">Editorial<span> ∞</span> Letras</a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#reservas">Reservaciones</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="portada" id="inicio">
+            <div class="portada-texto">
+                <p class="etiqueta">UN UNIVERSO ENTRE PÁGINAS</p>
+                <h1>Encuentra una historia que <em>te inspire.</em></h1>
+                <p class="descripcion">Descubre libros que despiertan tu imaginación, acompañan tus ideas y te invitan a conocer nuevos mundos.</p>
+                <a class="boton" href="#catalogo">Explorar catálogo</a>
+            </div>
+            <div class="portada-libros" aria-label="Ilustración decorativa de libros">
+                <div class="libro libro-uno"></div>
+                <div class="libro libro-dos"></div>
+                <div class="libro libro-tres"></div>
+            </div>
+        </section>
+
+        <!-- CATÁLOGO DE LIBROS -->
+        <section class="seccion" id="catalogo">
+            <div class="titulo-seccion">
+                <p class="etiqueta">NUESTRO UNIVERSO EDITORIAL</p>
+                <h2>Historias para <em>descubrir</em></h2>
+                <p>Una selección de títulos para distintos gustos y momentos.</p>
+            </div>
+
+ <!-- CARRITO DE COMPRAS -->
+<section class="seccion" id="carrito">
+    <div class="titulo-seccion">
+        <p class="etiqueta">TU SELECCIÓN</p>
+        <h2>Tu carrito de <em>compras</em></h2>
+        <p>Revisa los libros que deseas adquirir.</p>
+    </div>
+
+    <div class="carrito">
+        <ul id="lista"></ul>
+
+        <p>Total: $<span id="total">0</span> MXN</p>
+
+        <button id="vaciar" class="agregar" type="button">
+            Vaciar carrito
+        </button>
+    </div>
+</section>
+
+            <div class="libros">
+                <article class="tarjeta-libro">
+                    <img src= img/IT.png alt="Libros apilados">
+                    <p class="categoria">Ficción sobrenatural</p>
+                    <article class="tarjeta-libro">
+    <h3>IT</h3>
+    <p class="autor">Stephen King</p>
+    <p class="precio">$580 MXN</p>
+
+    <button class="agregar" type="button">
+        Agregar al carrito
+    </button>
+</article>
+                </article>
+
+                <article class="tarjeta-libro">
+                    <img src=img/principito.jpg alt="Libro abierto">
+                    <p class="categoria">Cuento filosófico</p>
+                     <article class="tarjeta-libro">
+    <h3>El principito</h3>
+    <p class="autor">Antoine de Saint-Exupéry</p>
+    <p class="precio">$189 MXN</p>
+
+    <button class="agregar" type="button">
+        Agregar al carrito
+    </button>
+</article>
+
+                </article>
+
+                <article class="tarjeta-libro">
+                    <img src=img/alicia.jpg alt="Libro en un ambiente tranquilo">
+                    <p class="categoria">Sinsentido/Fantasía</p>
+                    <article class="tarjeta-libro">
+    <h3>Alicia en el país de las maravillas</h3>
+    <p class="autor">Lewis Carroll</p>
+    <p class="precio">$300 MXN</p>
+
+    <button class="agregar" type="button">
+        Agregar al carrito
+    </button>
+</article>
+                </article>
+
+                <article class="tarjeta-libro">
+                    <img src=img/pedro.jpg alt="Libros en una biblioteca">
+                    <p class="categoria">Realismo mágico</p>
+                    <article class="tarjeta-libro">
+    <h3>Pedro Páramo</h3>
+    <p class="autor">Juan Rulfo</p>
+    <p class="precio">$380 MXN</p>
+
+    <button class="agregar" type="button">
+        Agregar al carrito
+    </button>
+</article>
+
+                </article>
+
+                <article class="tarjeta-libro">
+                    <img src=img/harry.jpg alt="Estantería de libros">
+                    <p class="categoria">Fantasía</p>
+                    <article class="tarjeta-libro">
+    <h3>Harry Potter y la piedra filosofal</h3>
+    <p class="autor">J.K Rowling</p>
+    <p class="precio">$299 MXN</p>
+
+    <button class="agregar" type="button">
+        Agregar al carrito
+    </button>
+</article>
+                </article>
+
+                <article class="tarjeta-libro">
+                    <img src=img/como.jpg alt="Libro de lectura">
+                    <p class="categoria">Novela romántica</p>
+                    <article class="tarjeta-libro">
+    <h3>Como agua para chocolate</h3>
+    <p class="autor">Laura Esquivel</p>
+    <p class="precio">$349 MXN</p>
+
+    <button class="agregar" type="button">
+        Agregar al carrito
+    </button>
+</article>
+
+</body>
+</html>
+                </article>
+            </div>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section class="sobre" id="nosotros">
+            <p class="etiqueta">EDITORIAL ∞ LETRAS</p>
+            <h2>Las mejores historias siempre encuentran <em>un lector.</em></h2>
+            <p>Creemos que cada libro abre una puerta a nuevas ideas, emociones y posibilidades. Nuestro propósito es acercarte a lecturas que puedas disfrutar a tu propio ritmo.</p>
+            <a class="boton boton-claro" href="#catalogo">Descubrir libros</a>
+        </section>
+
+
+        <!-- FORMULARIO DE DEMOSTRACIÓN -->
+        <section class="seccion reservaciones" id="reservas">
+            <div class="titulo-seccion">
+                <p class="etiqueta">TU PRÓXIMA LECTURA</p>
+                <h2>Solicita una <em>reservación</em></h2>
+                <p>Completa tus datos para indicar qué libro te interesa.</p>
+            </div>
+            <form class="formulario">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+
+                <label for="libro">Libro que deseas reservar</label>
+                <select id="libro" name="libro" required>
+                    <option value="">Selecciona un libro</option>
+                    <option>IT</option>
+                    <option>El principito</option>
+                    <option>Pedro Páramo</option>
+                    <option>Como agua para chocolate</option>
+                    <option>Harry Potter y la piedra filosofal</option>
+                    <option>Alicia en el país de las maravillas</option>
+                </select>
+
+                <label for="comentarios">Comentarios (opcional)</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe algún comentario"></textarea>
+                <button class="boton" type="submit">Enviar solicitud</button>
+                <p class="nota-formulario">Formulario de demostración: todavía no envía ni guarda información.</p>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #242424;
+    background: #887d61;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo { font-family: "Playfair Display", serif; }
+a { color: inherit; text-decoration: none; }
+
+/* ENCABEZADO */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 7%;
+    background: #8a836e;
+    border-bottom: 1px solid #a09581;
+}
+
+.logo { font-size: 25px; font-weight: 700; }
+.logo span { color: #dbcb3d; }
+
+nav { display: flex; flex-wrap: wrap; gap: 25px; }
+nav a { font-size: 14px; color: #252323; }
+nav a:hover { color: #a77a4d; }
+
+/* PORTADA */
+.portada {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 75px 10%;
+    background: #887d61;
+}
+
+.portada-texto { max-width: 540px; }
+.etiqueta {
+    color: #dbcb3d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+
+h1 em, h2 em { color: #dbcb3d; font-weight: 500; }
+.descripcion { max-width: 470px; color: #3a3835; margin-bottom: 28px; }
+
+.boton {
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    padding: 13px 22px;
+    background: #1f1d1c;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.boton:hover { background: #98704a; }
+
+/* DIBUJO DE LIBROS HECHO CON CSS */
+.portada-libros { position: relative; width: 310px; height: 270px; flex-shrink: 0; }
+.libro {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 220px;
+    padding: 15px;
+    border: 5px solid rgba(255,255,255,.25);
+    box-shadow: 8px 12px 20px rgba(40,30,20,.15);
+    color: white;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.libro-uno { top: 20px; left: 10px; background: #9d7552; transform: rotate(-10deg); }
+.libro-dos { top: 0; left: 100px; background: #705809; transform: rotate(5deg); }
+.libro-tres { top: 45px; left: 150px; background: #b7a18a; transform: rotate(13deg); }
+
+/* SECCIONES */
+.seccion { max-width: 1150px; margin: auto; padding: 85px 30px; }
+.titulo-seccion { max-width: 650px; margin: 0 auto 40px; text-align: center; }
+
+h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.2; margin-bottom: 15px; }
+.titulo-seccion > p:last-child { color: #252323; }
+
+/* TARJETAS DE LIBROS */
+.libros {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-libro {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ebe7e0;
+    transition: transform .2s ease;
+}
+
+.tarjeta-libro:hover { transform: translateY(-5px); }
+
+.tarjeta-libro img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 18px;
+    background: #e8e1d7;
+}
+
+.categoria { color: #98704a; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; }
+.tarjeta-libro h3 { font-size: 21px; line-height: 1.3; margin: 7px 0; }
+.autor { color: #252323; font-size: 13px; }
+.precio { margin-top: 14px; font-weight: 700; font-size: 14px; }
+
+/* SOBRE LA LIBRERÍA */
+.sobre { padding: 75px 10%; text-align: center; background: #2c2b27; color: white; }
+.sobre h2 { max-width: 700px; margin: 0 auto 20px; }
+.sobre h2 em { color: #d8b994; }
+.sobre > p:not(.etiqueta) { max-width: 650px; margin: 0 auto 28px; color: #e0e2dc; }
+.boton-claro { background: #f3ede4; color: #292724; }
+
+/* FORMULARIO */
+.reservaciones { max-width: 750px; }
+.formulario { display: flex; flex-direction: column; gap: 10px; padding: 30px; background: white; border: 1px solid #ebe7e0; }
+.formulario label { margin-top: 10px; font-size: 13px; font-weight: 700; }
+
+.formulario input, .formulario select, .formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #252323;
+    border-radius: 3px;
+    background: white;
+    color: #242424;
+    font: inherit;
+}
+
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus {
+    outline: 2px solid #c7a786;
+    border-color: #98704a;
+}
+
+.formulario .boton { align-self: flex-start; margin-top: 15px; }
+.nota-formulario { color: #252323; font-size: 12px; }
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f6f1e7; color: #2b2a26; }
+h1 { text-align: center; }
+
+.contenedor-tarjetas { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.tarjeta { background: white; border-radius: 10px; padding: 15px; width: 200px; text-align: center; }
+.agregar { background: #1f4d3f; color: white; border: none; border-radius: 6px; padding: 10px; cursor: pointer; width: 100%; }
+
+.carrito { max-width: 400px; margin: 40px auto; background: white; border-radius: 10px; padding: 20px; }
+.carrito ul { padding-left: 20px; }
+
+/* PIE DE PÁGINA */
+.pie { padding: 35px 20px; text-align: center; background: #252323; color: #f7f3ed; }
+.logo-pie { display: inline-block; margin-bottom: 8px; }
+.pie > p { font-size: 13px; color: #d3d0c9; }
+.copyright { margin-top: 18px; font-size: 11px !important; color: #aaa79f !important; }
+
+/* AJUSTES PARA TABLETAS Y CELULARES */
+@media (max-width: 800px) {
+    .encabezado { flex-direction: column; }
+    nav { justify-content: center; gap: 15px; }
+    .portada { flex-direction: column; text-align: center; padding: 60px 25px; }
+    .portada-texto { margin: auto; }
+    .descripcion { margin-left: auto; margin-right: auto; }
+    .portada-libros { transform: scale(.85); margin-top: -10px; }
+    .libros { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+}
+
+@media (max-width: 520px) {
+    .seccion { padding: 60px 18px; }
+    .libros { grid-template-columns: 1fr; }
+    .tarjeta-libro img { height: 300px; }
+    .formulario { padding: 20px; }
+    .portada-libros { transform: scale(.75); margin: -20px 0; }
+}
